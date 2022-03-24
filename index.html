@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/screen/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金藝智 PORTFOLIO 2022</title>
+</head>
+<body>
+    <header>
+        <div class="subTitlebox">
+            <a href="#" class="homeBtn">金 藝 智</a>
+            <a href="Profile.html" class="profileBtn">PROFILE</a>
+        </div>
+    </header>
+    <main>
+        <div class="subContentbox">
+            <div>
+                <div class="mainLinkbox">
+                    <a href="edit_poster.html" class="editorialBtn">EDITORIAL</a>
+                    <span class="moveTolink">MOVE<span class="scroll-btn__whitebar"></span></span>
+                </div>
+                <div class="mainLinkbox hoverNot">
+                    <a class="hilight">DESIGNER</a>
+                </div>
+                <div class="mainLinkbox webuiuxbox">
+                    <a href="web.html" class="webBtn">WEB</a>
+                    <span class="linkSlash">&nbsp;/&nbsp;</span>
+                    <a href="uiux_knb.html" class="uiuxBtn">UIUX</a>
+                    <span class="moveTolink">MOVE<span class="scroll-btn__whitebar"></span></span>
+                </div>
+            </div>          
+            <div class="editBlobbox">
+                <span class="blob blob1"></span>
+                <span class="blob blob2"></span>
+                <span class="blob blob3"></span>
+                <span class="blob blob4"></span>
+                <span class="blob blob5"></span>
+                <span class="blob blob6"></span>
+                <span class="blob blob7"></span>
+                <span class="blob blob8"></span>
+                <span class="blob blob9"></span>
+                <span class="blob blob10"></span>
+                <span class="blob blob11"></span>
+            </div>
+        </div>
+    </main>
+    <!-- <div class="scroll">
+        <a  href="#" class=scroll-btn>SCROLL<span class="scroll-btn__whitebar"></span></a>
+    </div> -->
+    <script>
+        $(document).ready(function(){
+            $('.webBtn').mouseover(function(){
+                $('.uiuxBtn').addClass('_none');
+                $('.webBtn').css('width','100%');
+            });
+            $('.webBtn').mouseleave(function(){
+                $('.uiuxBtn').removeClass('_none');
+                $('.webBtn').css('width','auto');
+            });
+
+            $('.uiuxBtn').mouseover(function(){
+                $('.webBtn').addClass('_none');
+                $('.uiuxBtn').css('width','100%');
+            });
+            $('.uiuxBtn').mouseleave(function(){
+                $('.webBtn').removeClass('_none');
+                $('.uiuxBtn').css('width','auto');
+            });
+        });
+    </script>
+</body>
+</html>

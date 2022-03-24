@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/screen/web.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金藝智 PORTFOLIO 2022</title>
+</head>
+<body>
+  <header>
+    <div class="subTitlebox">
+      <a href="web.html" class="subHomebtn">
+        <h1>WEB</h1>
+        <span>: 웹프로모션 / 상세페이지 디자인</span>
+      </a>
+      <ul Class="subMenu">
+        <li Class="subMenu_list">
+          <a href="index.html" class="subMenubtn">HOME</a>
+        </li>
+      </ul>
+      <span class="subTitle_right">2022</span>
+    </div>
+  </header>
+  <main>
+    <div class="subContentbox">
+      <div class="swiper swiper-container webSwiper">
+        <div class="swiper-wrapper webSwiper_wrapper">
+          <div class="swiper-slide webSwiper_slide">
+            <img src="img/web/webbanner_대지 1.jpg" alt="" style="">
+            <span class="sample_click">click</span>
+            <div class="webDescription">
+              <p class="webName">올리브영 프로모션 배너</p>
+              <!-- <span class="webYear">의왕시청 / 2018</span>
+              <span class="dot"> · </span>
+              <span class="webSize">297 x 420</span> -->
+            </div>
+          </div>
+          <div class="swiper-slide webSwiper_slide">
+            <img src="img/web/webbanner_대지 1 사본.jpg" alt="" style="">
+            <span class="sample_click">click</span>
+            <div class="webDescription">
+              <p class="webName">신세계 어버이날 프로모션 배너</p>
+              <!-- <span class="webYear">의왕시청 / 2018</span>
+              <span class="dot"> · </span>
+              <span class="webSize">297 x 420</span> -->
+            </div>
+          </div>
+          <div class="swiper-slide webSwiper_slide">
+            <img src="img/web/webbanner_대지 1 사본 2.jpg" alt="" style="">
+            <span class="sample_click">click</span>
+            <div class="webDescription">
+              <p class="webName">폴브리알 주얼리 상세페이지</p>
+              <!-- <span class="webYear">의왕시청 / 2018</span>
+              <span class="dot"> · </span>
+              <span class="webSize">297 x 420</span> -->
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next webSwiper_next"></div>
+        <div class="swiper-button-prev webSwiper_prev"></div> -->
+      </div>
+     </div>
+     <div class="editBlobbox">
+        <span class="blob blob1"></span>
+        <span class="blob blob2"></span>
+        <span class="blob blob3"></span>
+        <span class="blob blob4"></span>
+        <span class="blob blob5"></span>
+        <span class="blob blob6"></span>
+        <span class="blob blob7"></span>
+        <span class="blob blob8"></span>
+        <span class="blob blob9"></span>
+        <span class="blob blob10"></span>
+        <span class="blob blob11"></span>
+    </div>
+   </main>
+   <script>
+    $(document).ready(function(){
+      var swiper = new Swiper(".webSwiper", {
+        direction: 'horizontal',		// 가로 슬라이드
+        slidesPerView: 3,			// 한 영역에 보이는 슬라이드 수
+        spaceBetween: 15,
+        debugger: true,
+        loop: true,
+        navigation: {
+          nextEl: ".webSwiper_next",
+          prevEl: ".webSwiper_prev",
+        },
+        observer: true,	// 추가
+        observeParents: true,
+      });
+
+      var img = document.getElementsByTagName("img");
+    for (var x = 0; x < img.length; x++) {
+      img.item(x).onclick=function() {window.open(this.src)}; 
+    }
+    });
+  </script>
+</body>
+</html>
+          
